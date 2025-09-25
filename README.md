@@ -107,3 +107,7 @@ select * from PRODUCTS where Price Between 100 and 300;
   order by CATEGORY  desc;
 
   <img width="1920" height="1080" alt="Screenshot (33)" src="https://github.com/user-attachments/assets/4d8d4e04-7873-419b-b64a-4e054ae3500f" />
+
+
+
+  In Oracle SQL, the functionality equivalent to the LIMIT clause found in other SQL dialects (like MySQL) is achieved through different methods, primarily using ROWNUM or the FETCH FIRST/NEXT clause.
