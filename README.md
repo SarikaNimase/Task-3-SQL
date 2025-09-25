@@ -3,17 +3,20 @@ SQL Script with select  specific columns , where clause, order by clause, Like ,
 
 
 // To retriviews the all columns 
+
 select * from customer;
 <img width="1920" height="1080" alt="Screenshot (21)" src="https://github.com/user-attachments/assets/1164a821-0acc-42f6-ab5b-ea083697de04" />
 
 
 // to select only specific columns
+
 select CUSTOMER_ID, first_name, Last_name, mobile_no , city from customer;
 
 <img width="1920" height="1080" alt="Screenshot (22)" src="https://github.com/user-attachments/assets/6b1d2f54-acb2-4b99-bee0-dbb65027714d" />
 
 
 // to retriview records of maharastra state only  using where clause
+
 select * from customer where state = 'Maharastra';
 
 <img width="1920" height="1080" alt="Screenshot (23)" src="https://github.com/user-attachments/assets/d305a92b-52db-4679-a1a1-3b42a5839dce" />
@@ -28,6 +31,7 @@ select * from customer where CUSTOMER_ADDRESS = 'MG Road';
 
 
 // to those customers are retriviews which customers city pune and state maharastra
+
 select * from customer
  where CITY='pune'
   AND STATE='Maharastra';
@@ -37,6 +41,7 @@ select * from customer
 
 
 // using OR operator to fetch the data 
+
 select * from customer where CUSTOMER_ADDRESS= 'MG Road' OR CUSTOMER_ADDRESS='Gandhi Road Pune';
 
 
@@ -67,6 +72,7 @@ select * from customer where Last_name= 'Shinde' Or FIRST_NAME = 'Arjun';
 
 
 // to fetch the data only which customer first name start with A and after one letter j 
+
  select * from customer 
  where FIRST_NAME Like 'A_j%';
 
@@ -83,6 +89,7 @@ select * from PRODUCTS where Price Between 100 and 300;
 
 
 // to arrange the all data using category assending order
+
  select * from PRODUCTS 
   order by CATEGORY asc;
 
@@ -95,6 +102,7 @@ select * from PRODUCTS where Price Between 100 and 300;
 
 
   // to arrange the result in descending order 
+  
   select * from PRODUCTS 
   order by CATEGORY  desc;
 
